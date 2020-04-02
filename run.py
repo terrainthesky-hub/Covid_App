@@ -21,7 +21,7 @@ import dash_core_components as dcc
 
 path = Path('COVID-19 Cases (1).csv')
 
-df = pd.read_csv(r'C:\Users\lesle\Desktop\covid\COVID-19 Cases (1).csv')
+df = pd.read_csv('https://raw.githubusercontent.com/terrainthesky-hub/Covid_App/master/COVID-19%20Cases%20(1).csv')
 
 df['Date'] = pd.to_datetime(df['Date']) 
 df['Date_year'] = df['Date'].dt.year
